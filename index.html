@@ -1,23 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Live me up</title>
-</head>
-<body>
-  <script>
-    if (typeof bellepoque === 'undefined') {
-      const script = document.createElement('script');
-      script.src = 'https://cdn.livemeup.io/player.min.js';
-      script.type = 'text/javascript';
-      document.head.appendChild(script);
-      script.onload = function () {
-        bellepoque.startPlayer("fc6d7cdc-321a-4dc1-a2a5-92826fc1168e");
-      };
-    } else {
-      bellepoque.startPlayer("fc6d7cdc-321a-4dc1-a2a5-92826fc1168e");
+        <html lang="en">
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+              <style>
+  /* COMPONENT_CSS_START */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  t1 {
+      font-family: "Figtree", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
     }
-  </script>
-</body>
-</html>
+  t2 {
+      font-family: "Figtree", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  t3 {
+      font-family: "Figtree", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  t4 {
+      font-family: "Figtree", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  t5 {
+      font-family: "Figtree", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  t6 {
+      font-family: "Figtree", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  filled-button {
+    display: inline-block;
+    background-color: #030303;
+    color: #FFFFFF;
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+  outlined-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #7c2727;
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding:  12px 16px;
+    border: 1px solid #7c2727;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+  text-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #000;
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding:  12px 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  t1, t2, t3, t4, t5, t6,
+  filled-button, outlined-button, text-button {
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  t1:focus, t2:focus, t3:focus, t4:focus, t5:focus, t6:focus,
+  filled-button:focus, outlined-button:focus, text-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  /* COMPONENT_CSS_END */
+              </style>
+            </head>
+            <body>
+                 <script src="https://shivankar-vajro.github.io/vajro-sdk-v1/vajro-sdk.js"></script>
+                 <script>
+                  if (typeof bellepoque === 'undefined') {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.livemeup.io/player.min.js';
+    script.type = 'text/javascript';
+    document.head.appendChild(script);
+    script.onload = function () {
+        bellepoque.startPlayer("fc6d7cdc-321a-4dc1-a2a5-92826fc1168e");
+    }
+} else {
+    bellepoque.startPlayer("fc6d7cdc-321a-4dc1-a2a5-92826fc1168e");
+}
+                </script>
+            </body>
+        </html>
